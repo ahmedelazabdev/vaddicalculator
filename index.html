@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- High-CTR SEO Meta -->
+  <title>Vaddi Calculator 💰 Village Simple &amp; Compound Interest (వడ్డీ లెక్కలు - 100% Free)</title>
+  <meta name="description" content="Calculate village simple interest and compound interest (Chakra Vaddi / చక్రవడ్డీ) in Rupees per ₹100 per month. Instant date duration breakdown (years, months, days) with 100% private in-browser calculations.">
+  <meta name="keywords" content="vaddi calculator, village interest calculator, chakra vaddi calculator, telugu vaddi calculator, tamil vatti calculator, interest per 100 rupees per month, rural interest calculator india, simple vaddi calculator">
+  <meta name="author" content="Ahmed Elazab">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  
+  <!-- Absolute Canonical URL -->
+  <link rel="canonical" href="https://ahmedelazabdev.github.io/vaddicalculator/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ahmedelazabdev.github.io/vaddicalculator/">
+  <meta property="og:title" content="Vaddi Calculator 💰 Village Simple &amp; Compound Interest Calculator">
+  <meta property="og:description" content="Calculate village interest (₹ per ₹100 per month) and Chakra Vaddi with precise date-to-date duration. Instant printable settlement receipts.">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vaddi Calculator 💰 Village &amp; Chakra Vaddi Tool">
+  <meta name="twitter:description" content="Calculate South Indian village interest, date durations, and compound loans in one click. Free and 100% private.">
+
+  <!-- Structured Data: WebApplication, HowTo & FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Vaddi Calculator - Village Interest & Chakra Vaddi Tool",
+        "url": "https://ahmedelazabdev.github.io/vaddicalculator/",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All",
+        "description": "A financial calculator tailored to the traditional South Indian village interest system (Rupees per ₹100 per month), supporting Simple Vaddi and Compound Chakra Vaddi with exact date duration counting.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "name": "How to Calculate Village Interest (Vaddi) by Dates",
+        "description": "Step-by-step instructions to calculate principal, interest per ₹100 per month, and total settlement amount using loan dates.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Enter Principal Amount",
+            "text": "Type the original borrowed cash amount (Asalu / అసలు) in Indian Rupees (e.g., ₹1,00,000)."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Input Monthly Interest Rate",
+            "text": "Enter the agreed monthly interest rate per ₹100 (e.g., ₹1.5, ₹2, or ₹3 vaddi per month)."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Select Loan and Settlement Dates",
+            "text": "Choose the date the money was borrowed and the target settlement date to compute the exact duration in years, months, and days."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Choose Calculation Mode",
+            "text": "Select Simple Vaddi (సాధారణ వడ్డీ) or Compound Chakra Vaddi (చక్రవడ్డీ) with annual or half-yearly compounding."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What does ₹2 Vaddi (2 రూపాయల వడ్డీ) mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In South India (Andhra Pradesh, Telangana, and Tamil Nadu), '₹2 Vaddi' means an interest rate of ₹2 for every ₹100 per month. This equals 2% per month or 24% Annual Percentage Rate (APR). For a loan of ₹1,00,000, ₹2 vaddi equals ₹2,000 interest per month."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between Simple Vaddi and Chakra Vaddi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Simple Vaddi (సాధారణ వడ్డీ) calculates interest strictly on the initial principal borrowed. Chakra Vaddi (చక్రవడ్డీ / Compound Interest) periodically merges accumulated unpaid interest back into the principal (typically every 12 months or 6 months), so future interest accrues on the increased total."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How are partial days counted in village interest?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under traditional village conventions, 1 month is standardized to 30 days. If a loan lasts 1 year, 2 months, and 15 days, the duration is calculated as 14 months plus 15/30 (0.5) months, yielding 14.5 total months of interest."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my loan or financial data stored on any server?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No! All calculations run 100% locally in your web browser memory using client-side JavaScript. No loan amounts, names, or settlement dates are ever transmitted or saved to external servers."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #1d4ed8;
+      --primary-hover: #1e40af;
+      --primary-soft: #eff6ff;
+      --accent: #047857;
+      --accent-soft: #d1fae5;
+      --accent-text: #064e3b;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --border: #cbd5e1;
+      --text: #0f172a;
+      --text-muted: #334155;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08);
+      --shadow-xl: 0 10px 25px -5px rgba(0,0,0,0.08);
+      --radius: 14px;
+      /* Zero-CLS Native System Font Stack */
+      --font-stack: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-stack);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      text-rendering: optimizeSpeed;
+    }
+
+    /* Fixed 64px Header */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+      height: 64px;
+      overflow: hidden;
+    }
+
+    .nav-inner {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 0 20px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .brand-badge {
+      background: #047857;
+      color: #fff;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      font-weight: 800;
+    }
+
+    .status-tag {
+      background: var(--accent-soft);
+      color: var(--accent-text);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid #a7f3d0;
+    }
+
+    main {
+      max-width: 1050px;
+      width: 100%;
+      margin: 24px auto 40px;
+      padding: 0 16px;
+      flex: 1;
+      contain: layout style;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 760px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Main Calculator Card */
+    .calc-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-xl);
+      overflow: hidden;
+      margin-bottom: 36px;
+    }
+
+    .card-topbar {
+      background: #f1f5f9;
+      padding: 12px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .topbar-modes {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #e2e8f0;
+      padding: 4px;
+      border-radius: 8px;
+    }
+
+    .tab-btn {
+      border: none;
+      background: transparent;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .tab-btn.active {
+      background: #ffffff;
+      color: var(--primary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn-topbar {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      transition: all 0.15s ease;
+    }
+
+    .btn-topbar:hover {
+      background: #e2e8f0;
+    }
+
+    .btn-primary-action {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 2px 6px rgba(29, 78, 216, 0.25);
+    }
+
+    .btn-primary-action:hover {
+      background: var(--primary-hover);
+    }
+
+    /* Dual Workspace Grid */
+    .calc-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+    }
+
+    @media (max-width: 840px) {
+      .calc-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Left Input Controls */
+    .inputs-pane {
+      padding: 24px;
+      border-right: 1px solid var(--border);
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    @media (max-width: 840px) {
+      .inputs-pane {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .field-hint {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .input-unit-group {
+      display: flex;
+      gap: 8px;
+    }
+
+    .num-input {
+      flex: 1;
+      height: 42px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0 12px;
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.15s ease;
+    }
+
+    .num-input:focus {
+      border-color: var(--primary);
+    }
+
+    select.unit-select {
+      width: 140px;
+      height: 42px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0 8px;
+      background: #f8fafc;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text);
+      outline: none;
+      cursor: pointer;
+    }
+
+    select.unit-select:focus {
+      border-color: var(--primary);
+    }
+
+    .form-row-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    @media (max-width: 520px) {
+      .form-row-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Compounding Cycle Options Box */
+    .compound-box {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+      display: none;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .compound-title {
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Right Live Results Summary */
+    .summary-pane {
+      padding: 24px;
+      background: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .score-card {
+      background: var(--surface);
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .score-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .score-val {
+      font-size: 2.6rem;
+      font-weight: 900;
+      color: var(--primary);
+      font-family: var(--font-mono);
+      line-height: 1.1;
+      word-break: break-all;
+    }
+
+    .words-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #1e3a8a;
+      line-height: 1.5;
+      min-height: 48px;
+    }
+
+    .metrics-2x2-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .metric-subcard {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .subcard-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    .subcard-val {
+      font-family: var(--font-mono);
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .val-accent { color: #047857; }
+
+    /* Duration Breakdown Pill */
+    .duration-banner {
+      background: var(--accent-soft);
+      border: 1px solid #a7f3d0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    /* Semantic 3-Step Instruction Bar */
+    .action-steps-bar {
+      padding: 16px 20px;
+      background: #f8fafc;
+      border-top: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .action-steps-bar {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .action-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .step-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--primary-soft);
+      color: #1e40af;
+      font-weight: 800;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .step-title {
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+
+    .step-text p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Long-Form Knowledge Base */
+    .article-container {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 40px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 40px;
+      content-visibility: auto;
+      contain-intrinsic-size: 1000px 1800px;
+    }
+
+    @media (max-width: 600px) {
+      .article-container {
+        padding: 24px 18px;
+      }
+    }
+
+    .article-container h2 {
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--text);
+      margin: 36px 0 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      position: relative;
+    }
+
+    .article-container h2::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 60px;
+      height: 2px;
+      background: var(--primary);
+    }
+
+    .article-container h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .article-container h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 24px 0 12px;
+      color: #1e293b;
+    }
+
+    .article-container p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .article-container ul, .article-container ol {
+      margin: 0 0 24px 24px;
+      color: var(--text-muted);
+      font-size: 1.02rem;
+    }
+
+    .article-container li {
+      margin-bottom: 10px;
+    }
+
+    .highlight-card {
+      background: var(--primary-soft);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 0 10px 10px 0;
+      margin: 24px 0;
+      color: #1e3a8a;
+      font-size: 1rem;
+    }
+
+    /* Comparison Table in Article */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 24px 0;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    table.content-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    table.content-table thead {
+      background: #f1f5f9;
+    }
+
+    table.content-table th, table.content-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    table.content-table th {
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    table.content-table tbody tr:hover {
+      background-color: #f8fafc;
+    }
+
+    /* FAQ Accordion */
+    .faq-block {
+      margin-top: 24px;
+    }
+
+    .faq-card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 12px;
+      background: #f8fafc;
+    }
+
+    .faq-header {
+      padding: 16px 20px;
+      font-weight: 700;
+      font-size: 1.02rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+      color: var(--text);
+    }
+
+    .faq-header:hover {
+      color: var(--primary);
+    }
+
+    .faq-body {
+      padding: 0 20px 16px;
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      display: none;
+      line-height: 1.7;
+    }
+
+    .faq-card.open {
+      background: var(--surface);
+      border-color: var(--primary);
+    }
+
+    .faq-card.open .faq-body {
+      display: block;
+    }
+
+    .faq-toggle {
+      font-size: 1.3rem;
+      line-height: 1;
+      font-weight: 700;
+    }
+
+    .faq-card.open .faq-toggle {
+      transform: rotate(45deg);
+    }
+
+    /* Toast */
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #0f172a;
+      color: #fff;
+      padding: 10px 24px;
+      border-radius: 9999px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      box-shadow: var(--shadow-xl);
+      transition: transform 0.25s ease;
+      z-index: 1000;
+      pointer-events: none;
+    }
+
+    #toast.active {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 28px 16px;
+      margin-top: auto;
+    }
+
+    .footer-wrap {
+      max-width: 1050px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .footer-nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .footer-nav a {
+      color: var(--text-muted);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 600;
+    }
+
+    .footer-nav a:hover {
+      color: var(--primary);
+    }
+
+    /* Clean Print Stylesheet for Loan Slips */
+    @media print {
+      header, .hero, .card-topbar, .topbar-actions, .action-steps-bar, .article-container, footer, #toast {
+        display: none !important;
+      }
+      body {
+        background: #ffffff;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+      }
+      .calc-card, .calc-grid, .inputs-pane, .summary-pane {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        background: #ffffff;
+      }
+      .score-card {
+        border: 2px solid #000000;
+      }
+      .score-val {
+        color: #000000;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-inner">
+      <a href="https://ahmedelazabdev.github.io/vaddicalculator/" class="brand">
+        <span class="brand-badge">💰</span>
+        <span>Vaddi Calculator</span>
+      </a>
+      <span class="status-tag">Village &amp; Chakra Vaddi Tool</span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Vaddi Calculator 💰 <span>Village Simple &amp; Compound Interest</span></h1>
+      <p>Calculate South Indian rural interest (నూరు రూపాయలకు నెలకు వడ్డీ) and Chakra Vaddi (చక్రవడ్డీ). Computes precise date durations in years, months, and days with Indian numbering format and printable settlement slips.</p>
+    </section>
+
+    <!-- Main Calculator Card -->
+    <section class="calc-card" id="calculator-app">
+      <div class="card-topbar">
+        <!-- Mode Switcher -->
+        <div class="topbar-modes">
+          <button class="tab-btn active" id="tab-simple" onclick="setVaddiMode('simple')">Simple Vaddi (సాధారణ)</button>
+          <button class="tab-btn" id="tab-compound" onclick="setVaddiMode('compound')">Chakra Vaddi (చక్రవడ్డీ)</button>
+        </div>
+
+        <div class="topbar-actions">
+          <button class="btn-topbar btn-primary-action" onclick="copyVaddiSummary()">
+            <span>📋 Copy Summary</span>
+          </button>
+          <button class="btn-topbar" onclick="window.print()">
+            <span>🖨️ Print Slip</span>
+          </button>
+          <button class="btn-topbar" onclick="resetDefaults()">
+            <span>✖ Reset</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Dual Workspace Grid -->
+      <div class="calc-grid">
+        <!-- Left: Input Controls -->
+        <div class="inputs-pane">
+          <!-- Principal Amount (Asalu) -->
+          <div class="form-group">
+            <div class="form-label">
+              <label for="inp-principal">Principal Amount (అసలు మొత్తం):</label>
+              <span class="field-hint">Initial loan cash in ₹</span>
+            </div>
+            <div class="input-unit-group">
+              <input type="number" id="inp-principal" class="num-input" value="100000" min="1" step="1000" oninput="calculateVaddi()" aria-label="Principal Amount in Rupees">
+            </div>
+          </div>
+
+          <!-- Interest Rate & Format -->
+          <div class="form-group">
+            <div class="form-label">
+              <label for="inp-rate">Interest Rate (వడ్డీ రేటు):</label>
+              <span class="field-hint" id="rate-hint">Per ₹100 per month</span>
+            </div>
+            <div class="input-unit-group">
+              <input type="number" id="inp-rate" class="num-input" value="2.0" min="0.1" step="0.25" oninput="calculateVaddi()" aria-label="Interest Rate">
+              <select id="sel-rate-type" class="unit-select" onchange="handleRateTypeChange()" aria-label="Interest Rate Format">
+                <option value="per100" selected>₹ / ₹100 / Month</option>
+                <option value="annual">% Per Annum (Year)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Date Duration Row -->
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label" for="inp-start-date">Loan Date (తీసుకున్న తేదీ):</label>
+              <input type="date" id="inp-start-date" class="num-input" onchange="calculateVaddi()" aria-label="Loan Start Date">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="inp-end-date">Return Date (చెల్లించే తేదీ):</label>
+              <input type="date" id="inp-end-date" class="num-input" onchange="calculateVaddi()" aria-label="Loan End Settlement Date">
+            </div>
+          </div>
+
+          <!-- Compounding Cycle (Chakra Vaddi only) -->
+          <div class="compound-box" id="compound-options-box">
+            <span class="compound-title">Compounding Interval (వడ్డీ తిరుగుడు కాలం)</span>
+            <div class="form-group">
+              <label for="sel-compound-freq" style="display:none;">Compounding Frequency</label>
+              <select id="sel-compound-freq" class="unit-select" style="width:100%;" onchange="calculateVaddi()" aria-label="Compounding Frequency">
+                <option value="12" selected>Every 1 Year / 12 Months (ఏడాది తిరుగుడు)</option>
+                <option value="6">Every 6 Months (ఆరు నెలల తిరుగుడు)</option>
+                <option value="3">Every 3 Months / Quarterly</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Live Results Summary (Preloaded for Zero CLS) -->
+        <div class="summary-pane">
+          <!-- Total Amount Score Card -->
+          <div class="score-card">
+            <span class="score-title">Total Payable (అసలు + వడ్డీ)</span>
+            <div class="score-val" id="disp-total-amount">₹1,24,000</div>
+          </div>
+
+          <!-- Amount In Words (Lakhs & Crores) -->
+          <div class="words-card" id="disp-amount-words">
+            One Lakh Twenty-Four Thousand Rupees Only.
+          </div>
+
+          <!-- Metrics 2x2 Grid -->
+          <div class="metrics-2x2-grid">
+            <div class="metric-subcard">
+              <span class="subcard-label">Total Interest (వడ్డీ)</span>
+              <span class="subcard-val val-accent" id="disp-interest-total">₹24,000</span>
+            </div>
+            <div class="metric-subcard">
+              <span class="subcard-label">Monthly Interest</span>
+              <span class="subcard-val" id="disp-monthly-interest">₹2,000</span>
+            </div>
+          </div>
+
+          <!-- Duration Breakdown Banner -->
+          <div class="duration-banner" id="disp-duration-banner">
+            <span>Duration: <strong>1 Year, 0 Months, 0 Days</strong></span>
+            <span>(12.00 Total Months)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Semantic 3-Step Instruction Bar (No h4 skips) -->
+      <div class="action-steps-bar">
+        <div class="action-step">
+          <span class="step-num">1</span>
+          <div class="step-text">
+            <strong class="step-title">Enter Principal &amp; Rate</strong>
+            <p>Input borrowed principal cash and standard monthly interest (e.g. ₹1.5, ₹2, or ₹3 vaddi).</p>
+          </div>
+        </div>
+        <div class="action-step">
+          <span class="step-num">2</span>
+          <div class="step-text">
+            <strong class="step-title">Pick Loan Dates</strong>
+            <p>Choose borrowed and return dates. The calculator automatically counts exact years, months, and days.</p>
+          </div>
+        </div>
+        <div class="action-step">
+          <span class="step-num">3</span>
+          <div class="step-text">
+            <strong class="step-title">Print or Copy Settlement</strong>
+            <p>Generate clean village loan settlement slips ready to copy or print for borrower receipts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comprehensive Financial Knowledge Base & Guide -->
+    <article class="article-container">
+      <h2>Understanding the South Indian Village Interest System (Vaddi / వడ్డీ)</h2>
+      <p>
+        Across rural and suburban communities in <strong>Andhra Pradesh, Telangana, Tamil Nadu (Vatti), and Karnataka</strong>, traditional credit financing operates under a unique localized accounting system: <strong>Interest per ₹100 per Month</strong> (నూటికి నెలకు వడ్డీ). Unlike commercial banking institutions that quote annualized percentage rates (APR), village moneylenders, farmers, and small business owners calculate interest on a monthly cash basis.
+      </p>
+
+      <div class="highlight-card">
+        <strong>💡 The Fundamental Rule:</strong> Quoting "₹2 Vaddi" means paying ₹2 in interest for every ₹100 of borrowed principal each month. This represents <strong>2% per month</strong>, translating directly to an annualized interest rate of $2\% \times 12 = 24\%\text{ per year}$.
+      </div>
+
+      <h2>Simple Vaddi vs. Chakra Vaddi (సాధారణ వడ్డీ vs. చక్రవడ్డీ)</h2>
+      <p>
+        Traditional village financial contracts divide into two core mathematical systems:
+      </p>
+
+      <h3>1. Simple Vaddi (సాధారణ వడ్డీ)</h3>
+      <p>
+        In a simple interest contract, the monthly interest rate applies solely to the initial principal borrowed (అసలు). Even if the loan spans multiple years without repayment, the interest does not compound:
+      </p>
+      <div class="highlight-card" style="font-family:var(--font-mono); font-size:1.05rem;">
+        Total Interest = Principal × Total Months × (Monthly Rate / 100)
+      </div>
+
+      <h3>2. Chakra Vaddi / Compound Interest (చక్రవడ్డీ)</h3>
+      <p>
+        Under a compound interest agreement (frequently known as <em>Yedadi Tirugudu</em> or annual rollover), accumulated unpaid interest is merged into the principal at fixed intervals (typically every 12 months or 6 months). For subsequent periods, interest accrues on this newly enlarged capital base:
+      </p>
+      <ul>
+        <li><strong>Year 1:</strong> Interest is calculated on the original principal.</li>
+        <li><strong>Rollover Date:</strong> Total Year 1 interest is added to the principal to form the new base.</li>
+        <li><strong>Year 2:</strong> Interest is calculated on the compounded base amount.</li>
+      </ul>
+
+      <h2>Quick Reference Conversion Table: Village Vaddi vs. Annual APR</h2>
+      <div class="table-wrap">
+        <table class="content-table">
+          <thead>
+            <tr>
+              <th>Village Quoted Rate</th>
+              <th>Telugu / Tamil Term</th>
+              <th>Monthly Percentage</th>
+              <th>Annual Interest Rate (APR)</th>
+              <th>Monthly Interest on ₹1,00,000</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>₹1.00 Vaddi</strong></td>
+              <td>రూపాయి వడ్డీ / Oru Ruba Vatti</td>
+              <td>1.0% per month</td>
+              <td>12% per year</td>
+              <td>₹1,000 / month</td>
+            </tr>
+            <tr>
+              <td><strong>₹1.50 Vaddi</strong></td>
+              <td>రూపాయినర వడ్డీ</td>
+              <td>1.5% per month</td>
+              <td>18% per year</td>
+              <td>₹1,500 / month</td>
+            </tr>
+            <tr>
+              <td><strong>₹2.00 Vaddi</strong></td>
+              <td>రెండు రూపాయల వడ్డీ (Common)</td>
+              <td>2.0% per month</td>
+              <td>24% per year</td>
+              <td>₹2,000 / month</td>
+            </tr>
+            <tr>
+              <td><strong>₹2.50 Vaddi</strong></td>
+              <td>రెండున్నర వడ్డీ</td>
+              <td>2.5% per month</td>
+              <td>30% per year</td>
+              <td>₹2,500 / month</td>
+            </tr>
+            <tr>
+              <td><strong>₹3.00 Vaddi</strong></td>
+              <td>మూడు రూపాయల వడ్డీ</td>
+              <td>3.0% per month</td>
+              <td>36% per year</td>
+              <td>₹3,000 / month</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>How Date Durations and Partial Days Are Calculated</h2>
+      <p>
+        Calculating interest between two calendar dates requires counting full elapsed years, completed months, and remaining fractional days:
+      </p>
+      <ol>
+        <li><strong>The 30-Day Convention:</strong> In traditional Indian village accounting, 1 calendar month is standardized to exactly <strong>30 days</strong>.</li>
+        <li><strong>Borrowing from Months:</strong> If the settlement day number is smaller than the start day, 30 days are borrowed from the months column.</li>
+        <li><strong>Fractional Calculation:</strong> If a loan runs for 1 year, 4 months, and 12 days, the duration converts into:
+          <br><code>Total Months = (1 × 12) + 4 + (12 / 30) = 16.40 Months</code>.
+        </li>
+      </ol>
+
+      <h2>Frequently Asked Questions (FAQ)</h2>
+      <div class="faq-block">
+        <div class="faq-card">
+          <div class="faq-header" onclick="toggleFaqCard(this)">
+            <span>How is ₹1.50 vaddi calculated on ₹50,000 for 8 months?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-body">
+            At ₹1.50 vaddi (1.5% per month), the monthly interest is (₹50,000 × 1.5) / 100 = ₹750 per month. For 8 months, the total interest equals ₹750 × 8 = ₹6,000. Total repayment is ₹50,000 + ₹6,000 = ₹56,000.
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-header" onclick="toggleFaqCard(this)">
+            <span>Can I switch between monthly rate and annual percentage rate?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-body">
+            Yes. Use the dropdown next to the rate input to switch between '₹ / ₹100 / Month' (standard village format) and '% Per Annum' (commercial bank format). The calculator automatically synchronizes the mathematical factors.
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-header" onclick="toggleFaqCard(this)">
+            <span>How does 1-year compounding (ఏడాది తిరుగుడు) work?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-body">
+            Under annual compounding, exactly at month 12, the 12 months of accumulated simple interest is added to your original principal. In year 2, the interest rate is applied to this new, higher sum.
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <div class="faq-header" onclick="toggleFaqCard(this)">
+            <span>Does this calculator store any financial or personal details?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-body">
+            No! All calculations run 100% locally in your web browser memory using client-side JavaScript. None of your loan amounts, names, or settlement dates are ever transmitted or saved to external servers.
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Notification Toast -->
+  <div id="toast">Ready!</div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-wrap">
+      <p>© <span id="current-year"></span> All rights reserved — Vaddi Calculator &amp; Rural Finance Tool.</p>
+      <div class="footer-nav">
+        <a href="#calculator-app">Vaddi Calculator</a>
+        <a href="https://1io-site.blogspot.com" target="_blank" rel="noopener">By: 1io.site</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Instant Vaddi Calculation Engine -->
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    let vaddiMode = 'simple'; // 'simple' or 'compound'
+
+    const inpPrincipal = document.getElementById('inp-principal');
+    const inpRate = document.getElementById('inp-rate');
+    const selRateType = document.getElementById('sel-rate-type');
+    const inpStartDate = document.getElementById('inp-start-date');
+    const inpEndDate = document.getElementById('inp-end-date');
+    const selCompoundFreq = document.getElementById('sel-compound-freq');
+    const compoundBox = document.getElementById('compound-options-box');
+
+    const dispTotalAmount = document.getElementById('disp-total-amount');
+    const dispAmountWords = document.getElementById('disp-amount-words');
+    const dispInterestTotal = document.getElementById('disp-interest-total');
+    const dispMonthlyInterest = document.getElementById('disp-monthly-interest');
+    const dispDurationBanner = document.getElementById('disp-duration-banner');
+
+    function setVaddiMode(mode) {
+      vaddiMode = mode;
+      document.getElementById('tab-simple').classList.toggle('active', mode === 'simple');
+      document.getElementById('tab-compound').classList.toggle('active', mode === 'compound');
+      compoundBox.style.display = (mode === 'compound') ? 'flex' : 'none';
+      calculateVaddi();
+    }
+
+    function handleRateTypeChange() {
+      const type = selRateType.value;
+      const hint = document.getElementById('rate-hint');
+      const curVal = parseFloat(inpRate.value) || 0;
+
+      if (type === 'annual') {
+        hint.textContent = 'Annual Percentage Rate (%)';
+        inpRate.value = (curVal * 12).toFixed(1);
+      } else {
+        hint.textContent = 'Per ₹100 per month';
+        inpRate.value = (curVal / 12).toFixed(2);
+      }
+      calculateVaddi();
+    }
+
+    // Initialize Default Dates: exactly 1 year apart
+    function initDefaultDates() {
+      const end = new Date();
+      const start = new Date();
+      start.setFullYear(end.getFullYear() - 1);
+
+      inpStartDate.value = start.toISOString().split('T')[0];
+      inpEndDate.value = end.toISOString().split('T')[0];
+    }
+
+    // Precise Date Difference Calculation using 30-Day Month Convention
+    function getDateDuration(startDateStr, endDateStr) {
+      if (!startDateStr || !endDateStr) return null;
+
+      const d1 = new Date(startDateStr);
+      const d2 = new Date(endDateStr);
+
+      if (isNaN(d1) || isNaN(d2) || d1 > d2) return null;
+
+      let startYear = d1.getFullYear();
+      let startMonth = d1.getMonth() + 1;
+      let startDay = d1.getDate();
+
+      let endYear = d2.getFullYear();
+      let endMonth = d2.getMonth() + 1;
+      let endDay = d2.getDate();
+
+      let days = endDay - startDay;
+      let months = endMonth - startMonth;
+      let years = endYear - startYear;
+
+      if (days < 0) {
+        days += 30;
+        months -= 1;
+      }
+
+      if (months < 0) {
+        months += 12;
+        years -= 1;
+      }
+
+      const totalMonths = (years * 12) + months + (days / 30);
+      return { years, months, days, totalMonths };
+    }
+
+    // Number to Indian Words Converter (Lakhs & Crores)
+    const ones = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"];
+    const tens = ["", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"];
+
+    function numToWordsUnder1000(n) {
+      let str = "";
+      if (n >= 100) {
+        str += ones[Math.floor(n / 100)] + " Hundred ";
+        n %= 100;
+      }
+      if (n >= 20) {
+        str += tens[Math.floor(n / 10)] + " ";
+        n %= 10;
+      }
+      if (n > 0) {
+        str += ones[n] + " ";
+      }
+      return str.trim();
+    }
+
+    function numberToIndianWords(num) {
+      if (num === 0) return "Zero Rupees Only.";
+      let n = Math.floor(num);
+      let res = "";
+
+      const crore = Math.floor(n / 10000000);
+      n %= 10000000;
+      const lakh = Math.floor(n / 100000);
+      n %= 100000;
+      const thousand = Math.floor(n / 1000);
+      n %= 1000;
+      const remainder = n;
+
+      if (crore > 0) res += numToWordsUnder1000(crore) + " Crore ";
+      if (lakh > 0) res += numToWordsUnder1000(lakh) + " Lakh ";
+      if (thousand > 0) res += numToWordsUnder1000(thousand) + " Thousand ";
+      if (remainder > 0) res += numToWordsUnder1000(remainder) + " ";
+
+      return res.trim() + " Rupees Only.";
+    }
+
+    function formatINR(val) {
+      return "₹" + Math.round(val).toLocaleString('en-IN');
+    }
+
+    function calculateVaddi() {
+      const principal = parseFloat(inpPrincipal.value) || 0;
+      const rawRate = parseFloat(inpRate.value) || 0;
+      const rateType = selRateType.value;
+
+      // Normalize rate to monthly percentage (₹ per ₹100 per month)
+      const monthlyRatePct = rateType === 'annual' ? (rawRate / 12) : rawRate;
+
+      const dur = getDateDuration(inpStartDate.value, inpEndDate.value);
+
+      if (!dur || principal <= 0 || monthlyRatePct <= 0) {
+        dispTotalAmount.textContent = "₹0";
+        dispInterestTotal.textContent = "₹0";
+        dispMonthlyInterest.textContent = "₹0";
+        dispAmountWords.textContent = "Please enter valid dates and principal amount.";
+        dispDurationBanner.innerHTML = "<span>Duration: <strong>0 Years, 0 Months, 0 Days</strong></span>";
+        return;
+      }
+
+      // Update Duration Banner
+      dispDurationBanner.innerHTML = `
+        <span>Duration: <strong>${dur.years} Year${dur.years === 1 ? '' : 's'}, ${dur.months} Month${dur.months === 1 ? '' : 's'}, ${dur.days} Day${dur.days === 1 ? '' : 's'}</strong></span>
+        <span>(${dur.totalMonths.toFixed(2)} Total Months)</span>
+      `;
+
+      // 1-Month Base Interest
+      const oneMonthInterest = (principal * monthlyRatePct) / 100;
+      dispMonthlyInterest.textContent = formatINR(oneMonthInterest);
+
+      let totalInterest = 0;
+
+      if (vaddiMode === 'simple') {
+        // Simple Interest: P * T (months) * R / 100
+        totalInterest = (principal * dur.totalMonths * monthlyRatePct) / 100;
+      } else {
+        // Compound Interest (Chakra Vaddi)
+        const compoundMonths = parseInt(selCompoundFreq.value, 10) || 12;
+        let currentPrincipal = principal;
+        let remainingMonths = dur.totalMonths;
+
+        while (remainingMonths >= compoundMonths) {
+          const cycleInterest = (currentPrincipal * compoundMonths * monthlyRatePct) / 100;
+          currentPrincipal += cycleInterest;
+          remainingMonths -= compoundMonths;
+        }
+
+        // Apply simple interest on remaining fractional months
+        if (remainingMonths > 0) {
+          const finalFractionInterest = (currentPrincipal * remainingMonths * monthlyRatePct) / 100;
+          currentPrincipal += finalFractionInterest;
+        }
+
+        totalInterest = currentPrincipal - principal;
+      }
+
+      const grandTotal = principal + totalInterest;
+
+      // Update Displays
+      dispTotalAmount.textContent = formatINR(grandTotal);
+      dispInterestTotal.textContent = formatINR(totalInterest);
+      dispAmountWords.textContent = numberToIndianWords(grandTotal);
+    }
+
+    function resetDefaults() {
+      inpPrincipal.value = '100000';
+      inpRate.value = '2.0';
+      selRateType.value = 'per100';
+      document.getElementById('rate-hint').textContent = 'Per ₹100 per month';
+      initDefaultDates();
+      setVaddiMode('simple');
+      showToast('Reset to default values');
+    }
+
+    function copyVaddiSummary() {
+      const principal = formatINR(parseFloat(inpPrincipal.value) || 0);
+      const total = dispTotalAmount.textContent;
+      const interest = dispInterestTotal.textContent;
+      const monthly = dispMonthlyInterest.textContent;
+      const rate = `${inpRate.value} ${selRateType.value === 'per100' ? '₹ per ₹100/mo' : '% p.a.'}`;
+      const mode = vaddiMode === 'simple' ? 'Simple Vaddi' : 'Chakra Vaddi (Compound)';
+      const duration = dispDurationBanner.innerText.replace(/\n/g, ' ');
+
+      let summary = `=================================\n`;
+      summary += `    VILLAGE VADDI LOAN SUMMARY   \n`;
+      summary += `=================================\n`;
+      summary += `Loan Mode:        ${mode}\n`;
+      summary += `Principal:        ${principal}\n`;
+      summary += `Interest Rate:    ${rate}\n`;
+      summary += `Start Date:       ${inpStartDate.value}\n`;
+      summary += `Settlement Date:  ${inpEndDate.value}\n`;
+      summary += `${duration}\n`;
+      summary += `---------------------------------\n`;
+      summary += `Monthly Interest: ${monthly}\n`;
+      summary += `Total Interest:   ${interest}\n`;
+      summary += `Total Payable:    ${total}\n`;
+      summary += `In Words:         ${dispAmountWords.textContent}\n`;
+      summary += `=================================\n`;
+
+      navigator.clipboard.writeText(summary).then(() => {
+        showToast('📋 Copied settlement summary to clipboard!');
+      }).catch(() => {
+        showToast('Summary copied!');
+      });
+    }
+
+    function toggleFaqCard(header) {
+      header.parentElement.classList.toggle('open');
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('active');
+      setTimeout(() => {
+        toast.classList.remove('active');
+      }, 3000);
+    }
+
+    // Preload defaults on load for Zero CLS
+    initDefaultDates();
+    calculateVaddi();
+  </script>
+</body>
+</html>
