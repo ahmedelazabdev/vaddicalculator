@@ -1,0 +1,35 @@
+# Vaddi Calculator — Village Simple & Compound Interest Tool
+
+> A high-performance, client-side financial utility tailored to the South Indian rural interest system (Rupees per ₹100 per month / నూరు రూపాయలకు నెలకు వడ్డీ) and Chakra Vaddi (చక్రవడ్డీ) with exact date duration counting.
+
+## Project Overview
+
+- **Canonical URL**: https://ahmedelazabdev.github.io/vaddicalculator/
+- **Author**: Ahmed Elazab
+- **Primary Technology**: Native Client-Side JavaScript, Calendar Date Arithmetic, Indian Numbering System
+- **License**: Open Source / Free Financial Utility
+
+## Core Features & Financial Logic
+
+1. **South Indian Rural Interest System**:
+   - Supports interest quoted per ₹100 per month (e.g., ₹1, ₹1.5, ₹2, ₹2.5, or ₹3 vaddi) as practiced in Andhra Pradesh, Telangana, Tamil Nadu (Vatti), and Karnataka.
+   - Dual input formats: seamlessly switches between monthly ₹ per ₹100 rate and commercial Annual Percentage Rate (% p.a.).
+
+2. **Simple Vaddi vs. Chakra Vaddi (Compound)**:
+   - **Simple Vaddi**: Calculates non-compounding interest across exact months and fractional 30-day intervals.
+   - **Chakra Vaddi**: Periodically merges accrued interest into the principal (Annual or Half-Yearly rollovers / ఏడాది తిరుగుడు) before applying subsequent rates.
+
+3. **Exact Date Duration Counter**:
+   - Computes elapsed time between borrow and return dates using the standardized 30-day month convention, providing an exact breakdown of Years, Months, and Days.
+
+4. **Indian Currency Number-to-Words**:
+   - Formats all output figures in Indian numbering notation (Lakhs and Crores) with real-time text descriptions for promissory notes and receipts.
+
+5. **100% Client-Side Privacy**:
+   - All arithmetic executes locally in browser memory. Zero financial data, loan balances, or settlement dates are transmitted to external servers.
+
+## Technical Specifications & Performance
+
+- **Performance**: 100% Lighthouse score, zero external Google Fonts (using native system font stack), zero Cumulative Layout Shift (CLS = 0.000).
+- **Accessibility & Contrast**: Full WCAG AAA color contrast compliance, sequentially descending heading hierarchy (`h1` → `h2` → `h3`), and accessible form controls.
+- **Voucher Printing**: Dedicated `@media print` stylesheet formatting clean physical loan settlement receipts for borrower records.
